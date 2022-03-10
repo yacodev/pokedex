@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "author": {
-    "name": "Mariangélica Useche",
-    "email": "mariangelica.useche@gmail.com"
+    "name": "yacodev",
+    "email": "cyaco33@gmail.com"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
