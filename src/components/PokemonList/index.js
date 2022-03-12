@@ -2,15 +2,18 @@ import react from "react";
 import { Grid } from "semantic-ui-react";
 import { PokemonCart } from "./PokemonCart";
 
-const PokemonList = () => {
-  const pokemons = Array(20).fill("");
+const PokemonList = ({ pokemons }) => {
   return (
     <Grid className="PokemonList">
-      {pokemons.map((pk) => (
-        <PokemonCart />
+      {pokemons.map((pokemon, index) => (
+        <PokemonCart pokemon={pokemon} key={`pokemon-${index}`} />
       ))}
     </Grid>
   );
+};
+
+PokemonList.defaultProps = {
+  pokemons: [],
 };
 
 export { PokemonList };
